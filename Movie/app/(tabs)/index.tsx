@@ -7,8 +7,6 @@ import useFetch from "@/services/usefetch";
 import { fetchMovies } from "@/services/api";
 
 
-
-
 export default function Index() {
   const router = useRouter();
 
@@ -51,11 +49,7 @@ export default function Index() {
        />
 </>
        </View>
-
        )}
-
-
-
        </ScrollView>
       </View>
   );
