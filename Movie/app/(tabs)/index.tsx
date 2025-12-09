@@ -1,7 +1,7 @@
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import { View,Image, ScrollView, ActivityIndicator, Text, FlatList} from "react-native";
-import Search from "@/components/searchBar";
+import SearchBar from "@/components/searchBar";
 import { useRouter } from "expo-router";
 import useFetch from "@/services/usefetch";
 import { fetchMovies } from "@/services/api";
@@ -30,7 +30,7 @@ export default function Index() {
           <Text className="text-red-500 text-center mt-10">Error:{moviesError?.message}</Text>
        ):(
        <View className="flex-1 mt-5">
-        <Search
+        <SearchBar
         onPress={()=>{
           router.push('/search')
         }}

@@ -36,8 +36,8 @@ const MovieCard = ({
           </Text>
         </View>
         <View className="flex-row gap-x-1">
-          <Text className="text-xs text-white font-semibold uppercase">
-            {original_language}
+          <Text className="text-xs text-white font-semibold ">
+            Lang:-{original_language}
           </Text>
         </View>
         </View>
@@ -48,7 +48,7 @@ const MovieCard = ({
             {release_date.split("-")[0]}
           </Text>
           <Text className="text-xs font-medium text-light-300 uppercase">
-            {vote_count}
+            Votes-{vote_count}
           </Text>
         </View>
       </TouchableOpacity>
